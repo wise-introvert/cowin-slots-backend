@@ -1,7 +1,7 @@
-const express = require("express");
+import express from "express";
 
-const db = require("./db/index");
-const UserAccount = require("./db/models/userAccount");
+import db from "./db/index";
+import UserAccount from "./db/models/userAccount";
 
 const port = process.env.PORT || 4200;
 const app = express();

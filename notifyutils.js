@@ -1,7 +1,7 @@
-const { Client } = require("whatsapp-web.js");
-const qrcode = require("qrcode-terminal");
-const fs = require("fs");
-const redis = require("redis");
+import { Client } from "whatsapp-web.js";
+import qrcode from "qrcode-terminal";
+import fs from "fs";
+import redis from "redis";
 const redisClient = redis.createClient();
 
 const SESSION_FILE_PATH = "./session.json";

@@ -1,11 +1,11 @@
-const moment = require("moment");
-const axios = require("axios");
-const db = require("./db/index");
-const UserAccount = require("./db/models/userAccount");
-const redis = require("redis");
+import moment from "moment";
+import axios from "axios";
+import db from "./db/index";
+import UserAccount from "./db/models/userAccount";
+import redis from "redis";
 const redisClient = redis.createClient();
-const logger = require("./loggingutils");
-const notifierUtil = require("./notifyutils");
+import logger from "./loggingutils";
+import notifierUtil from "./notifyutils";
 
 const districts = [
   { district_id: 74, district_name: "Araria" },

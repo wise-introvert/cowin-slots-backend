@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 let connection = null;
 
 const DB_URI = process.env.MONGO_URI || "mongodb://localhost:27017";
